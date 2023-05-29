@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  iMusic
 //
-//  Created by BLASTA RECORDZ on 28.05.2023.
+//  Created by RAFAEL on 28.05.2023.
 //
 
 import UIKit
