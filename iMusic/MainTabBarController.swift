@@ -18,7 +18,7 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = #colorLiteral(red: 1, green: 0, blue: 0.3764705882, alpha: 1)
         
         viewControllers = [
-            generateViewController(rootViewController: SearchViewController(),
+            generateViewController(rootViewController: SearchMusicViewController(),
                                    image: #imageLiteral(resourceName: "Search"), title: "Search"),
             generateViewController(rootViewController: ViewController(), image: #imageLiteral(resourceName: "Library"),
                                    title: "Library")
