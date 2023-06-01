@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B9C135D0CAE125DF7AAF0015 /* Pods_iMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024D5DF2161BEB3A99BD7344 /* Pods_iMusic.framework */; };
 		EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA552A280194007F1B79 /* SearchResponse.swift */; };
+		EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA572A282271007F1B79 /* NetworkService.swift */; };
 		EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC02A23EDB500BB9329 /* AppDelegate.swift */; };
 		EBD3BEC32A23EDB500BB9329 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC22A23EDB500BB9329 /* SceneDelegate.swift */; };
 		EBD3BEC52A23EDB500BB9329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC42A23EDB500BB9329 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		61C0785F185B7D1D2FB449D2 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 		C0EB441307BA2934DB94CC96 /* Pods-iMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.debug.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6BAA552A280194007F1B79 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		EB6BAA572A282271007F1B79 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EBD3BEBD2A23EDB500BB9329 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD3BEC02A23EDB500BB9329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD3BEC22A23EDB500BB9329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				EBD3BEC42A23EDB500BB9329 /* ViewController.swift */,
 				EBD3BED42A23EE7100BB9329 /* MainTabBarController.swift */,
 				EBD3BED62A23F71A00BB9329 /* SearchViewController.swift */,
+				EB6BAA572A282271007F1B79 /* NetworkService.swift */,
 				EB6BAA552A280194007F1B79 /* SearchResponse.swift */,
 				EBD3BEC62A23EDB500BB9329 /* Main.storyboard */,
 				EBD3BEC92A23EDBB00BB9329 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 				EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */,
 				EBD3BED52A23EE7100BB9329 /* MainTabBarController.swift in Sources */,
 				EBD3BEC32A23EDB500BB9329 /* SceneDelegate.swift in Sources */,
+				EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
