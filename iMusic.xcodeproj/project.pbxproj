@@ -14,9 +14,12 @@
 		EB0B6CD02A2947350097FBEF /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6CC92A2947350097FBEF /* SearchModels.swift */; };
 		EB0B6CD12A2947350097FBEF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6CCA2A2947350097FBEF /* SearchViewController.swift */; };
 		EB0B6CD22A2947350097FBEF /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6CCB2A2947350097FBEF /* SearchInteractor.swift */; };
-		EB0B6CD32A2947350097FBEF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0B6CCC2A2947350097FBEF /* SearchViewController.xib */; };
+		EB0B6CD52A294F7A0097FBEF /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0B6CD42A294F7A0097FBEF /* SearchViewController.storyboard */; };
+		EB0B6CD72A2961B20097FBEF /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B6CD62A2961B20097FBEF /* UIViewController + Storyboard.swift */; };
 		EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA552A280194007F1B79 /* SearchResponse.swift */; };
 		EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA572A282271007F1B79 /* NetworkService.swift */; };
+		EBB5CBD22A2BE69800E5FD38 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */; };
+		EBB5CBD42A2BE6ED00E5FD38 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */; };
 		EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC02A23EDB500BB9329 /* AppDelegate.swift */; };
 		EBD3BEC32A23EDB500BB9329 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC22A23EDB500BB9329 /* SceneDelegate.swift */; };
 		EBD3BEC52A23EDB500BB9329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC42A23EDB500BB9329 /* ViewController.swift */; };
@@ -37,9 +40,12 @@
 		EB0B6CC92A2947350097FBEF /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
 		EB0B6CCA2A2947350097FBEF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EB0B6CCB2A2947350097FBEF /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
-		EB0B6CCC2A2947350097FBEF /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		EB0B6CD42A294F7A0097FBEF /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		EB0B6CD62A2961B20097FBEF /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		EB6BAA552A280194007F1B79 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		EB6BAA572A282271007F1B79 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		EBD3BEBD2A23EDB500BB9329 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD3BEC02A23EDB500BB9329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD3BEC22A23EDB500BB9329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,13 +90,14 @@
 		EB0B6CB62A2944C10097FBEF /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				EB0B6CC62A2947350097FBEF /* SearchPresenter.swift */,
-				EB0B6CC72A2947350097FBEF /* SearchWorker.swift */,
-				EB0B6CC82A2947350097FBEF /* SearchRouter.swift */,
-				EB0B6CC92A2947350097FBEF /* SearchModels.swift */,
+				EBB5CBD02A2BE65E00E5FD38 /* Cell */,
+				EB0B6CD42A294F7A0097FBEF /* SearchViewController.storyboard */,
 				EB0B6CCA2A2947350097FBEF /* SearchViewController.swift */,
 				EB0B6CCB2A2947350097FBEF /* SearchInteractor.swift */,
-				EB0B6CCC2A2947350097FBEF /* SearchViewController.xib */,
+				EB0B6CC62A2947350097FBEF /* SearchPresenter.swift */,
+				EB0B6CC92A2947350097FBEF /* SearchModels.swift */,
+				EB0B6CC72A2947350097FBEF /* SearchWorker.swift */,
+				EB0B6CC82A2947350097FBEF /* SearchRouter.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -98,9 +105,35 @@
 		EB0B6CC52A29463D0097FBEF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EBB5CBD52A2BF9AD00E5FD38 /* Models */,
 				EB6BAA572A282271007F1B79 /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		EB0B6CD82A2961CC0097FBEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B6CD62A2961B20097FBEF /* UIViewController + Storyboard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EBB5CBD02A2BE65E00E5FD38 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */,
+				EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBB5CBD52A2BF9AD00E5FD38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB6BAA552A280194007F1B79 /* SearchResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EBD3BEB42A23EDB500BB9329 = {
@@ -131,7 +164,7 @@
 				EB0B6CB62A2944C10097FBEF /* Search */,
 				EBD3BED62A23F71A00BB9329 /* SearchMusicViewController.swift */,
 				EBD3BEC42A23EDB500BB9329 /* ViewController.swift */,
-				EB6BAA552A280194007F1B79 /* SearchResponse.swift */,
+				EB0B6CD82A2961CC0097FBEF /* Helpers */,
 				EBD3BEC62A23EDB500BB9329 /* Main.storyboard */,
 				EBD3BEC92A23EDBB00BB9329 /* Assets.xcassets */,
 				EBD3BECB2A23EDBB00BB9329 /* LaunchScreen.storyboard */,
@@ -201,8 +234,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD3BECD2A23EDBB00BB9329 /* LaunchScreen.storyboard in Resources */,
+				EBB5CBD22A2BE69800E5FD38 /* TrackCell.xib in Resources */,
 				EBD3BECA2A23EDBB00BB9329 /* Assets.xcassets in Resources */,
-				EB0B6CD32A2947350097FBEF /* SearchViewController.xib in Resources */,
+				EB0B6CD52A294F7A0097FBEF /* SearchViewController.storyboard in Resources */,
 				EBD3BEC82A23EDB500BB9329 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD3BED72A23F71A00BB9329 /* SearchMusicViewController.swift in Sources */,
+				EB0B6CD72A2961B20097FBEF /* UIViewController + Storyboard.swift in Sources */,
 				EBD3BEC52A23EDB500BB9329 /* ViewController.swift in Sources */,
 				EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */,
 				EB0B6CD22A2947350097FBEF /* SearchInteractor.swift in Sources */,
+				EBB5CBD42A2BE6ED00E5FD38 /* TrackCell.swift in Sources */,
 				EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */,
 				EBD3BED52A23EE7100BB9329 /* MainTabBarController.swift in Sources */,
 				EB0B6CCE2A2947350097FBEF /* SearchWorker.swift in Sources */,
