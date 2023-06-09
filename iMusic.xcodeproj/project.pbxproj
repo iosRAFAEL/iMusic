@@ -32,6 +32,7 @@
 		EBD3BECD2A23EDBB00BB9329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD3BECB2A23EDBB00BB9329 /* LaunchScreen.storyboard */; };
 		EBD3BED52A23EE7100BB9329 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BED42A23EE7100BB9329 /* MainTabBarController.swift */; };
 		EBD3BED72A23F71A00BB9329 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BED62A23F71A00BB9329 /* SearchMusicViewController.swift */; };
+		EBF5C4F82A32A6E2009E8E8D /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C4F72A32A6E2009E8E8D /* Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		EBD3BECE2A23EDBB00BB9329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD3BED42A23EE7100BB9329 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		EBD3BED62A23F71A00BB9329 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
+		EBF5C4F72A32A6E2009E8E8D /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				EB0B6CD62A2961B20097FBEF /* UIViewController + Storyboard.swift */,
 				EB0DEA192A313568003CDFDA /* CMTime + Extension.swift */,
+				EBF5C4F72A32A6E2009E8E8D /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				EB3D6BCC2A2D523800B58D24 /* FooterView.swift in Sources */,
 				EB0DEA1A2A313568003CDFDA /* CMTime + Extension.swift in Sources */,
 				EBB5CBD42A2BE6ED00E5FD38 /* TrackCell.swift in Sources */,
+				EBF5C4F82A32A6E2009E8E8D /* Nib.swift in Sources */,
 				EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */,
 				EBD3BED52A23EE7100BB9329 /* MainTabBarController.swift in Sources */,
 				EB0B6CCE2A2947350097FBEF /* SearchWorker.swift in Sources */,

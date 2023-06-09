@@ -32,6 +32,7 @@ class TrackDetailView: UIView {
     }()
     
     weak var delegate: TrackMovingDelegate?
+    weak var tabBarDelegate: MainTabBarControllerDelegate?
 
     // MARK: - awakeFromNib
     
@@ -135,7 +136,9 @@ class TrackDetailView: UIView {
     
     
     @IBAction func dragDownButtonTapped(_ sender: Any) {
-        self.removeFromSuperview()
+        
+        self.tabBarDelegate?.manimizeTrackDetailController()
+//        self.removeFromSuperview()
     }
     
     @IBAction func previousTrack(_ sender: Any) {
