@@ -16,6 +16,14 @@ protocol TrackMovingDelegate: class {
 
 class TrackDetailView: UIView {
     
+    @IBOutlet weak var miniPlayPauseButton: UIButton!
+    @IBOutlet weak var miniTrackView: UIView!
+    @IBOutlet weak var miniGoForwardButton: UIButton!
+    @IBOutlet weak var maximizedStackView: UIStackView!
+    @IBOutlet weak var miniTrackImageView: UIImageView!
+    @IBOutlet weak var miniTrackTitleLabel: UILabel!
+    
+    
     @IBOutlet weak var trackImageView: UIImageView!
     @IBOutlet weak var currentTimeSlider: UISlider!
     @IBOutlet weak var currentTimeLabel: UILabel!
@@ -33,7 +41,7 @@ class TrackDetailView: UIView {
     
     weak var delegate: TrackMovingDelegate?
     weak var tabBarDelegate: MainTabBarControllerDelegate?
-
+    
     // MARK: - awakeFromNib
     
     override func awakeFromNib() {
@@ -42,20 +50,23 @@ class TrackDetailView: UIView {
         let scale: CGFloat = 0.8
         trackImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
         trackImageView.layer.cornerRadius = 5
-        
-        trackImageView.backgroundColor = .black
+      
     }
-   
+    
     // MARK: - Setup
     
     func set(viewModel: SearchViewModel.Cell) {
+        miniTrackTitleLabel.text = viewModel.trackName
         trackTitleLabel.text = viewModel.trackName
         authorTitleLabel.text = viewModel.artistName
         playTrack(previewUrl: viewModel.previewUrl)
         monitorStartTime()
         observePlayerCurrentTime()
+        playPauseButton.setImage(UIImage(named: "pause"), for: .normal)
+        miniPlayPauseButton.setImage(UIImage(named: "pause"), for: .normal)
         let string600 = viewModel.iconUrlString?.replacingOccurrences(of: "100x100", with: "600x600")
         guard let url = URL(string: string600 ?? "") else { return }
+        miniTrackImageView.sd_setImage(with: url, completed: nil)
         trackImageView.sd_setImage(with: url, completed: nil)
     }
     
@@ -88,6 +99,7 @@ class TrackDetailView: UIView {
             let currentDurationText = ((durationTime ?? CMTimeMake(value: 1, timescale: 1)) - time).toDisplayString()
             self?.durationLabel.text  = "-\(currentDurationText )"
             self?.updateCurrentTimeSlider()
+            
         }
     }
     
@@ -116,7 +128,7 @@ class TrackDetailView: UIView {
             self.trackImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
         }, completion: nil)
     }
-   
+    
     // MARK: - @IBActions
     
     @IBAction func handleCurrentTimeSlider(_ sender: Any) {
@@ -127,7 +139,7 @@ class TrackDetailView: UIView {
         let seekTimeInSeconds = Float64(percentage) * durationInSeconds
         let seekTime = CMTimeMakeWithSeconds(seekTimeInSeconds, preferredTimescale: 1)
         player.seek(to: seekTime)
-
+        
     }
     
     @IBAction func handleVolumeSlider(_ sender: Any) {
@@ -137,8 +149,8 @@ class TrackDetailView: UIView {
     
     @IBAction func dragDownButtonTapped(_ sender: Any) {
         
-        self.tabBarDelegate?.manimizeTrackDetailController()
-//        self.removeFromSuperview()
+        self.tabBarDelegate?.minimizeTrackDetailController()
+        //        self.removeFromSuperview()
     }
     
     @IBAction func previousTrack(_ sender: Any) {
@@ -159,10 +171,12 @@ class TrackDetailView: UIView {
         if player.timeControlStatus == .paused {
             player.play()
             playPauseButton.setImage(UIImage(named: "pause"), for: .normal)
+            miniPlayPauseButton.setImage(UIImage(named: "pause"), for: .normal)
             enlargeTrackImageView()
         } else {
             player.pause()
             playPauseButton.setImage(UIImage(named: "play"), for: .normal)
+            miniPlayPauseButton.setImage(UIImage(named: "play"), for: .normal)
             reduceTrackImageView()
         }
     }
