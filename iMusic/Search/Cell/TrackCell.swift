@@ -46,4 +46,12 @@ class TrackCell: UITableViewCell {
         trackImageView.sd_setImage(with: url, completed: nil)
     }
     
+    
+    @IBAction func addTrackAction(_ sender: Any) {
+        print("444")
+    }
+    
+    @IBAction func showInfoAction(_ sender: Any) {
+        print("333")
+    }
 }

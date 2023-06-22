@@ -22,6 +22,7 @@
 		EB3D6BD32A2D802400B58D24 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3D6BD22A2D802400B58D24 /* TrackDetailView.xib */; };
 		EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA552A280194007F1B79 /* SearchResponse.swift */; };
 		EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA572A282271007F1B79 /* NetworkService.swift */; };
+		EBA61AA82A4488EF00076F6B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61AA72A4488EF00076F6B /* Library.swift */; };
 		EBB5CBD22A2BE69800E5FD38 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */; };
 		EBB5CBD42A2BE6ED00E5FD38 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */; };
 		EBD3BEC12A23EDB500BB9329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3BEC02A23EDB500BB9329 /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		EB3D6BD22A2D802400B58D24 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
 		EB6BAA552A280194007F1B79 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		EB6BAA572A282271007F1B79 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EBA61AA72A4488EF00076F6B /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		EBD3BEBD2A23EDB500BB9329 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 				EBD3BEC22A23EDB500BB9329 /* SceneDelegate.swift */,
 				EB0B6CC52A29463D0097FBEF /* Services */,
 				EBD3BED42A23EE7100BB9329 /* MainTabBarController.swift */,
+				EBA61AA72A4488EF00076F6B /* Library.swift */,
 				EB0B6CB62A2944C10097FBEF /* Search */,
 				EBD3BED62A23F71A00BB9329 /* SearchMusicViewController.swift */,
 				EBD3BEC42A23EDB500BB9329 /* ViewController.swift */,
@@ -339,6 +342,7 @@
 				EB0B6CD02A2947350097FBEF /* SearchModels.swift in Sources */,
 				EBD3BEC32A23EDB500BB9329 /* SceneDelegate.swift in Sources */,
 				EB0B6CCD2A2947350097FBEF /* SearchPresenter.swift in Sources */,
+				EBA61AA82A4488EF00076F6B /* Library.swift in Sources */,
 				EB3D6BD12A2D74B600B58D24 /* TrackDetailView.swift in Sources */,
 				EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */,
 			);
