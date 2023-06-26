@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct Library: View {
+    
+    var tracks = UserDefaults.standard.savedTracks()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -35,10 +39,8 @@ struct Library: View {
                 }.padding().frame(height: 50)
                 Divider().padding(.leading).padding(.trailing)
                 // Spacer()
-                List {
-                    LibraryCell()
-                    Text("sec")
-                    Text("third")
+                List(tracks) { track in
+                    LibraryCell(cell: track)
                 }
             }
             .navigationTitle("Library")
@@ -46,17 +48,28 @@ struct Library: View {
     }
 }
 
-struct LibraryCell : View {
+
+struct LibraryCell: View {
+    
+    var cell: SearchViewModel.Cell
+    
     var body: some View {
+        let url = URL(string: cell.iconUrlString!)!
         HStack {
-            Image("Image").resizable().frame(width: 60, height: 60).cornerRadius(2)
-            VStack {
-                Text("Track Name")
-                Text("Artist Name")
+            URLImage(url) { image in
+                image
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .cornerRadius(2)
+            }
+            VStack(alignment: .leading) {
+                Text("\(cell.trackName)")
+                Text("\(cell.artistName)")
             }
         }
     }
 }
+
 struct Library_Previews: PreviewProvider {
     static var previews: some View {
         Library()

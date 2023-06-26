@@ -20,6 +20,9 @@
 		EB3D6BCC2A2D523800B58D24 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D6BCB2A2D523800B58D24 /* FooterView.swift */; };
 		EB3D6BD12A2D74B600B58D24 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D6BD02A2D74B600B58D24 /* TrackDetailView.swift */; };
 		EB3D6BD32A2D802400B58D24 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3D6BD22A2D802400B58D24 /* TrackDetailView.xib */; };
+		EB5313FB2A4619900011199F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5313FA2A4619900011199F /* UserDefaults.swift */; };
+		EB5313FE2A46576B0011199F /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = EB5313FD2A46576B0011199F /* URLImage */; };
+		EB5314002A46576B0011199F /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = EB5313FF2A46576B0011199F /* URLImageStore */; };
 		EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA552A280194007F1B79 /* SearchResponse.swift */; };
 		EB6BAA582A282271007F1B79 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BAA572A282271007F1B79 /* NetworkService.swift */; };
 		EBA61AA82A4488EF00076F6B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61AA72A4488EF00076F6B /* Library.swift */; };
@@ -52,6 +55,7 @@
 		EB3D6BCB2A2D523800B58D24 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		EB3D6BD02A2D74B600B58D24 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		EB3D6BD22A2D802400B58D24 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
+		EB5313FA2A4619900011199F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		EB6BAA552A280194007F1B79 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		EB6BAA572A282271007F1B79 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EBA61AA72A4488EF00076F6B /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5313FE2A46576B0011199F /* URLImage in Frameworks */,
+				EB5314002A46576B0011199F /* URLImageStore in Frameworks */,
 				B9C135D0CAE125DF7AAF0015 /* Pods_iMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +163,7 @@
 			children = (
 				EBB5CBD12A2BE69800E5FD38 /* TrackCell.xib */,
 				EBB5CBD32A2BE6ED00E5FD38 /* TrackCell.swift */,
+				EB5313FA2A4619900011199F /* UserDefaults.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -225,6 +232,10 @@
 			dependencies = (
 			);
 			name = iMusic;
+			packageProductDependencies = (
+				EB5313FD2A46576B0011199F /* URLImage */,
+				EB5313FF2A46576B0011199F /* URLImageStore */,
+			);
 			productName = iMusic;
 			productReference = EBD3BEBD2A23EDB500BB9329 /* iMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +264,9 @@
 				Base,
 			);
 			mainGroup = EBD3BEB42A23EDB500BB9329;
+			packageReferences = (
+				EB5313FC2A46576B0011199F /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = EBD3BEBE2A23EDB500BB9329 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,6 +344,7 @@
 				EBD3BEC52A23EDB500BB9329 /* ViewController.swift in Sources */,
 				EB6BAA562A280194007F1B79 /* SearchResponse.swift in Sources */,
 				EB0B6CD22A2947350097FBEF /* SearchInteractor.swift in Sources */,
+				EB5313FB2A4619900011199F /* UserDefaults.swift in Sources */,
 				EB3D6BCC2A2D523800B58D24 /* FooterView.swift in Sources */,
 				EB0DEA1A2A313568003CDFDA /* CMTime + Extension.swift in Sources */,
 				EBB5CBD42A2BE6ED00E5FD38 /* TrackCell.swift in Sources */,
@@ -564,6 +579,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB5313FC2A46576B0011199F /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB5313FD2A46576B0011199F /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB5313FC2A46576B0011199F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		EB5313FF2A46576B0011199F /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB5313FC2A46576B0011199F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBD3BEB52A23EDB500BB9329 /* Project object */;
 }
